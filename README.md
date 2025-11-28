@@ -64,7 +64,38 @@ Game bắn súng góc nhìn từ trên xuống (top-down shooter) được xây 
 - `Assets/Scripts/ResScript/` ⚙️ Game manager, spawn, pooling, leaderboard  
 - `Assets/Scripts/UI/` 🖥️ Thanh máu, stamina, điểm số  
 
+
+## 📸 Screenshots
+<img src="https://github.com/user-attachments/assets/8e5b31d1-1dbe-4431-80aa-ef54745080ca" style="width:66%;">
+
+<img src="https://github.com/user-attachments/assets/c33c68b7-b155-41b8-86ed-5d9633155935" style="width:66%;">
+
+<img src="https://github.com/user-attachments/assets/df58f558-c271-4dc4-b8d6-5bd53f487ffb" style="width:66%;">
+
+<img src="https://github.com/user-attachments/assets/196ab632-6e95-4f19-929c-a8cc7d478cf5" style="width:66%;">
+
+<img src="https://github.com/user-attachments/assets/8f4ea552-e773-416a-b23b-2c3567a5df73" style="width:66%;">
+
+<img src="https://github.com/user-attachments/assets/e3a56ec6-cceb-4ce1-a37c-829ccb71458c" style="width:66%;">
+
+<img src="https://github.com/user-attachments/assets/d2980935-72e3-4525-8e8f-1ed4d5403cf4" style="width:66%;">
+
+<img src="https://github.com/user-attachments/assets/e8d41191-8e64-4f56-97a8-67bd0ac81751" style="width:66%;">
+
+
+
 ## 🏗️ Build
-1. `File → Build Settings`
-2. Thêm các scene cần thiết
-3. Chọn nền tảng và Build
+1. **Mở Build Settings**: `File → Build Settings` (hoặc `Ctrl+Shift+B`)
+2. **Thêm Scenes**: Kéo các scene cần thiết vào "Scenes In Build" (StartScene, ChooseMap, các map gameplay)
+3. **Chọn nền tảng**: Windows, Android, WebGL, iOS, v.v.
+4. **Cấu hình** (tùy chọn):
+   - Windows: Architecture x86_64, Scripting Backend IL2CPP
+   - Android: Minimum API 21, Scripting Backend IL2CPP
+   - WebGL: Compression Gzip/Brotli
+5. **Build**: Nhấn Build và chọn thư mục output
+
+### Lưu ý
+
+- Kiểm tra Player Settings (`Edit → Project Settings → Player`) để cấu hình tên game, icon, version
+- Test build trên thiết bị thật, đặc biệt các tính năng cần internet (leaderboard)
+- Nếu build quá lớn, kiểm tra và nén texture, audio files
